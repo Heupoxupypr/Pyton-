@@ -9,7 +9,7 @@ x_lst = list()
 
 #Заполняем список согласно формуле (1+1/n)**n и сразу ссумируем полученные элементы
 for i in range(1,n+1):
-    x_lst.append((1+1/i)**i)
+    x_lst.append(round((1+1/i)**i,2))
     sum += x_lst[i-1]
 
 print (x_lst)
